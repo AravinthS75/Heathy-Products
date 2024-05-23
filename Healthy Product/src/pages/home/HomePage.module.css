@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    max-height:max-content;
+    
+}
+
+.h1{
+    padding-left: 12%;
+}
+
+.h3{
+    padding-top: 2%;
+    padding-left: 11.5%;
+    padding-bottom: 5.3%;
+}
+
+.contentText {
+    padding: 5% 15% 10% 6%;
+    width: 100%;
+    margin: 0;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.fruits{
+    width: 250px;
+    height: 250px;
+}
+
+.fimageContainer{
+    margin-left: 11%;
+    position: relative;
+    display: inline-block;
+}
+
+.foverlayText{
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    padding: 20px;
+    /* transition: transform 0.3s ease; */
+    display: none;
+}
+
+.fimageContainer:hover .foverlayText {
+    display: block;
+    /* transform: scale(1.1); */
+}
+
+.veges{
+    width: 250px;
+    height: 250px;
+}
+
+.vimageContainer{
+    
+    margin-left: 6%;
+    position: relative;
+    display: inline-block;
+}
+
+.voverlayText{
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    padding: 20px;
+    display: none;
+}
+
+.vimageContainer:hover .voverlayText {
+    display: block;
+}
+
+.meats{
+    
+    width: 250px;
+    height: 250px;
+}
+
+.mimageContainer{
+    
+    margin-left: 5%;
+    position: relative;
+    display: inline-block;
+}
+
+
+.moverlayText{
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    padding: 20px;
+    display: none;
+}
+
+.mimageContainer:hover .moverlayText {
+    display: block;
+}
