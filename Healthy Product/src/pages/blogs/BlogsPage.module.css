@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    max-height:max-content;
+}
+.content {
+    padding: 20%;
+    padding-left: 40%;
+    width: 100%;
+    background-color: aliceblue;
+    margin: 0;
+}

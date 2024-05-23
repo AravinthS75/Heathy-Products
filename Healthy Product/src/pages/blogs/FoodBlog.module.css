@@ -1,0 +1,28 @@
+*{
+    max-height:max-content;
+}
+
+.ul{
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+    line-height: 180%;
+    font-size: 110%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.h2{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 230%;
+
+}
+
+.img{
+    width:80%; 
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
