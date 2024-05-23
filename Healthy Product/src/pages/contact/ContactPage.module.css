@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    max-height:max-content;
+}
+.content {
+    padding-top: 3%;
+    padding-bottom: 7.75637%;
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.display{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.img{
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+    
+}
+
+.txt{
+    color: black;
+}
+
+.displayBox{
+    border: 1px solid;
+    text-align: center;
+    width: 35%;
+    margin-left: 31.5%;
+    margin-top: 4%;
+}
