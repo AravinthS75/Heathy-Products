@@ -1,0 +1,48 @@
+.orderMessage {
+  padding: 2% 5%;
+  padding-left: 41.5%;
+  padding-bottom: 17.35%;
+  padding-top: 18%;
+  width: max-content;
+  background-color: rgb(213, 255, 98);
+  text-align: center;
+}
+
+.orderDetails{
+  padding: 2%;
+  background-color: rgb(213, 255, 98);
+}
+
+.orderContainer{
+  margin: 10% auto;
+  background-color: rgb(213, 255, 98);
+  width: 60%; /* Adjust the width to match the header */
+  margin-left: 20%;
+  padding-bottom: 2.35%;
+}
+
+.orderHead{
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+  padding: 1%;
+  width: 100%; 
+}
+
+.orderList {
+  
+  list-style-type: none;
+  padding: 0;
+}
+
+.orderItem {
+  /* border-bottom: 1px solid black; */
+  padding: 1%;
+  margin: 1% 0;
+  padding-left: 5%;
+}
+
+.orderCheck{
+  margin-top: 3%;
+  margin-left: 16%;
+}
