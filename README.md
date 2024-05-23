@@ -1,2 +1,2 @@
 # Heathy-Products
-A project done after react course over
+A simple react project
