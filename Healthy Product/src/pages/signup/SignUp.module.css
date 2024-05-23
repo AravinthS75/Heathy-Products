@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    max-height:max-content;
+    /* overflow: hidden; */
+}
+.contentButton {
+    line-height: 225%;
+    text-align: center;
+    background-color: black;
+}
+.content{   
+    width: 100%;
+    margin: 0;
+    background-color: aliceblue;
+    padding-bottom: 3.7%;
+    padding-top: 12%;
+}
+.contentInput{
+    width: 100%;
+    padding-top: 23px;
+    height: 51%;
+    background-color: rgb(213, 255, 98);
+}
+
+.loginContainer{
+    display: flex;
+    margin: 0% 0% 0% 17%;
+    width: 64%;
+}
+
+.loginTxt{
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    margin-top: 4.2%;
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+.message {
+    margin-top: 20px;
+    color: green;
+    text-align: center;
+  }
