@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    max-height:max-content;
+}
+.contentText {
+    padding: 5% 0% 5% 10%;
+    /* padding-left: 40%; */
+    width: 100%;
+    padding-left: 28%;
+    line-height: 225%;
+}
+.content{   
+    width: 100%;
+    background-color: aliceblue;
+}
+.fimg{
+    width: 100%;
+    height: 500px;
+    margin: 0;     
+    padding-top: 2%;
+}
