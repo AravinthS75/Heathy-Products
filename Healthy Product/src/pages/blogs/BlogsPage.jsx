@@ -27,12 +27,12 @@ function BlogsPage() {
                 <div style={{ width: '50%', padding: '10px' }}>
                     <Link to="/blogs/grooming"><img src={Grooming} alt="Grooming" style={{ width: '100%', marginTop:'5%', }} /></Link>
                     <h3 style={{ marginTop:'2%' }}>GROOMING</h3>
-                    <h2 style={{ marginTop:'2%', marginBottom:'10%' }}>The Importance of Pet Grooming and Choosing Safe Products</h2>
+                    <h2 style={{ marginTop:'2%', marginBottom:'58px' }}>The Importance of Pet Grooming and Choosing Safe Products</h2>
                 </div>
                 <div style={{ width: '50%', padding: '10px' }}>
                     <Link to="/blogs/food"><img src={Food} alt="Food" style={{ width: '100%', marginTop:'5%' }} /></Link>
                     <h3 style={{ marginTop:'2%' }}>FOOD</h3>
-                    <h2 style={{ marginTop:'2%', marginBottom:'10%' }}>Tips for Dog Owners: Choosing Safe and Nutritious Pet Food</h2>
+                    <h2 style={{ marginTop:'2%', marginBottom:'58px' }}>Tips for Dog Owners: Choosing Safe and Nutritious Pet Food</h2>
                 </div>
             </div>
         </>
