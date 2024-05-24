@@ -5,7 +5,7 @@ import Kiwiberry from "../../images/Fruits/Kiwiberry.WebP";
 import Papaya from "../../images/Fruits/Papaya.WebP";
 import Watermelon from "../../images/Fruits/Watermelon.WebP";
 import styles from "./Fruits.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 
 function FruitsEnable({loginStatus}) {
     const navigate = useNavigate();
@@ -112,4 +112,4 @@ function Fruits() {
     );
 }
 
-export default FruitsEnable;
+export default memo(FruitsEnable);
