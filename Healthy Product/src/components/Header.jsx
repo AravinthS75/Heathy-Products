@@ -37,7 +37,7 @@ function Header({ loginStatus, setLoginStatus }) {
                     Store
                 </Link>
             </nav>
-            <Link to="/" className={!loginStatus ? styles.logoA : styles.logoB}>Helthy Products</Link>
+            <Link to="/" className={!loginStatus ? styles.logoA : styles.logoB}>Healthy Products</Link>
             <div className={styles.auth}>
                 {!loginStatus ? (
                     <>
