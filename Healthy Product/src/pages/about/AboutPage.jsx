@@ -5,7 +5,7 @@ import IG from "../../images/Logo/IG.WebP";
 import TWT from "../../images/Logo/TWT.WebP";
 import LI from "../../images/Logo/LI.WebP";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 
 function AboutEnable({ loginStatus }) {
   const navigate = useNavigate();
@@ -93,4 +93,4 @@ function AboutPage() {
   );
 }
 
-export default AboutEnable;
+export default memo(AboutEnable);
