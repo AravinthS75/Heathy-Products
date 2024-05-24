@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, memo } from 'react';
 import LemonGrass from '../../images/Shop/LemonGrass.webp';
 import Soursop from '../../images/Shop/Soursop.webp';
 import SoursopLeaf from '../../images/Shop/SoursopLeaf.webp';
@@ -178,4 +178,4 @@ function Store() {
   );
 }
 
-export default StoreEnable;
+export default memo(StoreEnable);
