@@ -1,7 +1,7 @@
 import style from "./GroomingBlog.module.css";
 import Grooming from "../../images/Blogs/grooming.WebP";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 
 function GroomingEnable({ loginStatus }) {
     const navigate = useNavigate();
@@ -60,4 +60,4 @@ function GroomingBlog() {
     );
 }
 
-export default GroomingEnable;
+export default memo(GroomingEnable);
