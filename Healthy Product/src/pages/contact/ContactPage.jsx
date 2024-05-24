@@ -2,7 +2,7 @@ import styles from "./ContactPage.module.css";
 import PH from "../../images/Logo/PH.WebP";
 import ML from "../../images/Logo/ML.WebP";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 
 function ContactEnable({loginStatus}) {
   const navigate = useNavigate();
@@ -45,4 +45,4 @@ function ContactPage() {
   );
 }
 
-export default ContactEnable;
+export default memo(ContactEnable);
