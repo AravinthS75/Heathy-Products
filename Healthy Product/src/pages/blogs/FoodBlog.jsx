@@ -1,7 +1,7 @@
 import style from "./FoodBlog.module.css";
 import Food from "../../images/Blogs/Food.WebP";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 
 function FoodEnable({ loginStatus }) {
     const navigate = useNavigate();
@@ -48,4 +48,4 @@ function FoodBlog() {
     );
 }
 
-export default FoodEnable;
+export default memo(FoodEnable);
