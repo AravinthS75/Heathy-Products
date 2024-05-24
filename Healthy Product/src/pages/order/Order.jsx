@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import style from './Order.module.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -69,7 +69,7 @@ function Order() {
   );
 }
 
-export default OrderEnable;
+export default memo(OrderEnable);
 
 
 
