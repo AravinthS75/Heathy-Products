@@ -5,7 +5,7 @@ import Fish from "../../images/Meat/Fish.WebP";
 import Mutton from "../../images/Meat/Mutton.WebP";
 import Pork from "../../images/Meat/Pork.WebP";
 import styles from "./Meats.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 
 function MeatsEnable({ loginStatus }) {
     const navigate = useNavigate();
@@ -101,4 +101,4 @@ function Meats(){
     </>
 }
 
-export default MeatsEnable
+export default memo(MeatsEnable);
