@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import style from './Checkout.module.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -202,7 +202,7 @@ function Checkout() {
           Postal Code:
         </label>
         <input type="text" name="postalcode" value={formData.postalcode} onChange={handleChange} style={{ width: '293px' }} required />
-        <p style={{ paddingLeft: '29%' }}>Cash on Delivery</p>
+        <p style={{ paddingLeft: '25%' }}>Cash on Delivery only</p>
         <button type="submit" className={style.checkoutButton}>Place Order</button>
       </form>
       {message && <p className={style.message}>{message}</p>}
@@ -210,4 +210,4 @@ function Checkout() {
   );
 }
 
-export default CheckoutEnable;
+export default memo(CheckoutEnable);
