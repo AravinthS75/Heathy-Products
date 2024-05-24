@@ -3,7 +3,7 @@ import Fruits from "../../images/Cover/Fruits.WebP";
 import Vegetables from "../../images/Cover/Vegetables.WebP"
 import Meats from "../../images/Cover/Meats.WebP"
 import { Link, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 
 function HomeEnable({ loginStatus }) {
     const navigate = useNavigate();
@@ -59,4 +59,4 @@ function HomePage() {
     </>
 }
 
-export default HomeEnable
+export default memo(HomeEnable);
