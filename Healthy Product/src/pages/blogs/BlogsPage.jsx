@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 import Food from "../../images/Blogs/Food.WebP";
 import Grooming from "../../images/Blogs/grooming.WebP";
 
@@ -39,4 +39,4 @@ function BlogsPage() {
     );
 }
 
-export default BlogEnable;
+export default memo(BlogEnable);
