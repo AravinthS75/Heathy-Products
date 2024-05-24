@@ -5,7 +5,7 @@ import Carrot from "../../images/Vegetables/Carrot.WebP";
 import GreenPeas from "../../images/Vegetables/GreenPeas.WebP";
 import Spinach from "../../images/Vegetables/Spinach.WebP";
 import styles from "./Vegetables.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 
 function VegetablesEnable({ loginStatus }) {
     const navigate = useNavigate();
@@ -102,4 +102,4 @@ function Vegetables(){
     </>
 }
 
-export default VegetablesEnable
+export default memo(VegetablesEnable);
