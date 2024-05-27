@@ -59,3 +59,32 @@
     text-decoration: 2px underline black;
     color: greenyellow;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .Container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .img, .applW {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .txt, .applWtxt {
+        padding: 20px;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .name {
+        padding-left: 0;
+        text-align: center;
+    }
+}
