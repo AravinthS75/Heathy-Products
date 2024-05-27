@@ -1,13 +1,21 @@
-* {
-    margin: 0;
-    /* padding: 0; */
-    box-sizing: border-box;
-    max-height:max-content;
+.blogContainer {
+    display: flex;
+    flex-wrap: wrap;
 }
-.content {
-    padding: 20%;
-    padding-left: 40%;
+
+.blogItem {
     width: 100%;
-    background-color: aliceblue;
-    margin: 0;
+    padding: 10px;
+    padding-bottom: 7.1%;
+}
+
+.blogImage {
+    width: 100%;
+    margin-top: 5%;
+}
+
+@media (min-width: 480px) {
+    .blogItem {
+        width: 50%;
+    }
 }
