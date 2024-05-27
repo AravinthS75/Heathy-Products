@@ -36,7 +36,7 @@ function AboutEnable({ loginStatus }) {
 
 function AboutPage() {
   const person = {
-    name: "Aravinth Sivasubramani",
+    name: "Aravinth Sivasubramani S",
     age: 23,
     location: "Chennai, India.",
     native: "Karur",
@@ -58,8 +58,9 @@ function AboutPage() {
 
   return (
     <>
-      <div>
-        <img fetchPriority="high" src={img} alt={person.name} className={styles.img}></img>
+      <div className={styles.imageContainer}>
+        <img fetchPriority="high" src={img} alt={person.name} className={styles.img} />
+        <h2 className={styles.nameMobile}>S.Aravinth Sivasubramani</h2>
       </div>
       <div className={styles.content}>
         <h1 style={{ textDecoration: "underline", fontSize: "35px", paddingTop: "15%" }}>About Me</h1>
@@ -84,13 +85,13 @@ function AboutPage() {
             <a href={link.Li} target="_blank" rel="noopener noreferrer"><img src={LI} className={styles.conect} style={{ marginLeft: '5px' }}></img></a>
             <a href={link.Twt} target="_blank" rel="noopener noreferrer"><img src={TWT} className={styles.conect} style={{ marginLeft: '5px' }}></img></a>
           </div>
-        </div>
-      </div>
-      <div className={styles.h2}>
-        <h2>S. Aravinth Sivasubramani</h2>
-      </div>
-    </>
-  );
+          </div>
+    </div>
+    <div className={styles.h2}>
+      <h2>S. Aravinth Sivasubramani</h2>
+    </div>
+  </>
+);
 }
 
 export default memo(AboutEnable);
