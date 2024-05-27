@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useEffect, memo } from "react";
 import Food from "../../images/Blogs/Food.WebP";
 import Grooming from "../../images/Blogs/grooming.WebP";
+import styles from "./BlogsPage.module.css"; 
 
 function BlogEnable({ loginStatus }) {
     const navigate = useNavigate();
@@ -11,9 +12,10 @@ function BlogEnable({ loginStatus }) {
         imgFood.src = Food;
         const imgGrooming = new Image();
         imgGrooming.src = Grooming;
-            if (!loginStatus) {
-                navigate("/login");
-            }
+        
+        if (!loginStatus) {
+            navigate("/login");
+        }
     }, [loginStatus, navigate]);
 
     return localStorage.getItem('loginStatus') ? <BlogsPage /> : null;
@@ -22,17 +24,17 @@ function BlogEnable({ loginStatus }) {
 function BlogsPage() {
     return (
         <>    
-            <h1 style={{ textAlign:'center', marginTop:'4.6%' }}>Blogs</h1>
-            <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-                <div style={{ width: '50%', padding: '10px' }}>
-                    <Link to="/blogs/grooming"><img src={Grooming} alt="Grooming" style={{ width: '100%', marginTop:'5%', }} /></Link>
-                    <h3 style={{ marginTop:'2%' }}>GROOMING</h3>
-                    <h2 style={{ marginTop:'2%', marginBottom:'58px' }}>The Importance of Pet Grooming and Choosing Safe Products</h2>
+            <h1 style={{ textAlign: 'center', marginTop: '4.6%' }}>Blogs</h1>
+            <div className={styles.blogContainer}>
+                <div className={styles.blogItem}>
+                    <Link to="/blogs/grooming"><img src={Grooming} alt="Grooming" className={styles.blogImage} /></Link>
+                    <h3>GROOMING</h3>
+                    <h2>The Importance of Pet Grooming and Choosing Safe Products</h2>
                 </div>
-                <div style={{ width: '50%', padding: '10px' }}>
-                    <Link to="/blogs/food"><img src={Food} alt="Food" style={{ width: '100%', marginTop:'5%' }} /></Link>
-                    <h3 style={{ marginTop:'2%' }}>FOOD</h3>
-                    <h2 style={{ marginTop:'2%', marginBottom:'58px' }}>Tips for Dog Owners: Choosing Safe and Nutritious Pet Food</h2>
+                <div className={styles.blogItem}>
+                    <Link to="/blogs/food"><img src={Food} alt="Food" className={styles.blogImage} /></Link>
+                    <h3>FOOD</h3>
+                    <h2>Tips for Dog Owners: Choosing Safe and Nutritious Pet Food</h2>
                 </div>
             </div>
         </>
