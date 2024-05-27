@@ -4,18 +4,18 @@ import ML from "../../images/Logo/ML.WebP";
 import { useNavigate } from "react-router-dom";
 import { useEffect, memo } from "react";
 
-function ContactEnable({loginStatus}) {
+function ContactEnable({ loginStatus }) {
   const navigate = useNavigate();
   useEffect(() => {
     if (!loginStatus) {
-        navigate("/login");
+      navigate("/login");
     }
   }, [loginStatus, navigate]);
-  return localStorage.getItem('loginStatus') ? <ContactPage /> : null;
+  return localStorage.getItem("loginStatus") ? <ContactPage /> : null;
 }
 
 function ContactPage() {
-  const emailId = 'aravinthsivavadivu@gmail.com';
+  const emailId = "aravinthsivavadivu@gmail.com";
   const phoneNumber = 8838615817;
 
   useEffect(() => {
@@ -28,17 +28,17 @@ function ContactPage() {
   return (
     <div className={styles.content}>
       <div className={styles.displayBox}>
-        <h1 style={{ textAlign: 'center', backgroundColor: 'black', color: 'whitesmoke' }}>Contact</h1>
+        <h1 style={{ textAlign: "center", backgroundColor: "black", color: "whitesmoke" }}>Contact</h1>
         <div className={styles.display}>
-          <img src={PH} className={styles.img} style={{ marginTop: '5%' }} alt="PH" /><br /><br />
-          <p style={{ textDecoration: 'underline 2px', fontSize: '25px' }}>Call</p><br />
-          <a href={`tel:${phoneNumber}`} style={{ textDecoration: 'none', fontSize: '25px' }}><span className={styles.txt}>Ph: </span>{phoneNumber}</a>
+          <img src={PH} style={{ paddingTop: '2%'}} className={styles.img} alt="PH" /><br /><br />
+          <p style={{ textDecoration: "underline 2px", fontSize: "20px" }}>Call</p><br />
+          <a href={`tel:${phoneNumber}`} style={{ textDecoration: "none", fontSize: "25px" }}><span className={styles.txt}>Ph: </span>{phoneNumber}</a>
         </div>
 
         <div className={styles.display}>
           <img src={ML} className={styles.img} alt="ML" /><br /><br />
-          <p style={{ textDecoration: 'underline 2px', fontSize: '25px' }}>Mail To</p><br />
-          <a href={`mailto:${emailId}`} style={{ textDecoration: 'none', fontSize: '25px' }}><span className={styles.txt}>Mail: </span>{emailId}</a>
+          <p style={{ textDecoration: "underline 2px", fontSize: "25px" }}>Mail To</p><br />
+          <a href={`mailto:${emailId}`} style={{ textDecoration: "none", fontSize: "20px" }}><span className={styles.txt}>Mail: </span>{emailId}</a>
         </div>
       </div>
     </div>
