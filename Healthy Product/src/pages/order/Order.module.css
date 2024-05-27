@@ -19,6 +19,7 @@
   width: 60%; /* Adjust the width to match the header */
   margin-left: 20%;
   padding-bottom: 24px;
+  
 }
 
 .orderHead{
@@ -45,4 +46,37 @@
 .orderCheck{
   margin-top: 3%;
   margin-left: 16%;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+
+  .orderContainer {
+    width: 90%;
+    margin-left: 5%; 
+    margin-top: 188.5px;
+    margin-bottom: 188.5px;
+  }
+
+  .orderMessage {
+    padding: 10%; 
+    padding-left: 27%;
+    padding-top: 27%; 
+    padding-bottom: 20%;
+  }
+
+  .orderHead {
+    padding: 5%;
+  }
+
+  .orderList{
+      padding-left: 2%;
+      font-size: small;
+  }
+
+  .orderItem{
+    padding-left: 4%;
+    font-size: small;
+  }
+
 }
