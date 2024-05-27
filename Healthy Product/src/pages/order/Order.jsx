@@ -70,8 +70,3 @@ function Order() {
 }
 
 export default memo(OrderEnable);
-
-
-
-
-
