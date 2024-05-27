@@ -43,3 +43,43 @@
     color: green;
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    .loginContainer {
+      flex-direction: column; /* Stack elements vertically */
+      margin: 0 auto; /* Center align */
+      width: 90%; 
+    }
+  
+    .img {
+      order: -1; /* Move the image to the top */
+      margin-bottom: 20px; /* Add margin for spacing */
+    }
+  
+    .loginTxt {
+      margin-top: 10px; /* Adjust margin for spacing */
+    }
+  
+    .contentButton {
+        padding-left: 42%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+  
+    .contentInput {
+      padding-top: 20px; /* Adjust padding */
+      height: auto; /* Allow height to adjust based on content */
+    }
+  
+    .content {
+      padding-top: 8%; /* Adjust padding */
+      padding-bottom: 2%; /* Adjust padding */
+    }
+
+    .contentInput label,
+    .contentInput input {
+      display: block;
+    }
+
+  }
+  
