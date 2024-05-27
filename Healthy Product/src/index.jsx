@@ -20,7 +20,6 @@ const SignUp = React.lazy (()=>import( "./pages/signup/SignUp"));
 const StoreEnable = React.lazy (()=>import( "./pages/store/Store"));
 const OrderEnable = React.lazy (()=>import( "./pages/order/Order"));
 const CheckoutEnable = React.lazy (()=>import( "./pages/checkout/Checkout"));
-const Test = React.lazy (()=>import( "./pages/test/Test"));
 
 function MasterPage() {
 
@@ -67,7 +66,6 @@ function MasterPage() {
         <Route path="/store" element={<StoreEnable loginStatus={loginStatus}/>} />
         <Route path="/checkout" element={<CheckoutEnable loginStatus={loginStatus}/>} />
         <Route path="*" element={<Nopage />} />
-        <Route path="/test" element={<Test />} />
       </Routes>
       <Footer />
     </BrowserRouter>
