@@ -1,3 +1,4 @@
+/* Base Styles */
 .header {
     display: flex;
     justify-content: space-between;
@@ -5,11 +6,12 @@
     background-color: #333;
     width: 100%;
     margin: 0;
+    padding: 0 1rem;
+    position: relative;
 }
 
 .nav {
     display: flex;
-    flex-grow: 1; /*Allow nav to take up remaining space*/
 }
 
 .navLink {
@@ -26,33 +28,23 @@
     color: orchid;
 }
 
-.logoA {
+.logoA,
+.logoB {
     text-transform: uppercase;
     text-decoration: none;
     color: whitesmoke;
     cursor: pointer;
-    margin-right: 31.5%;
+    /* Add margin-right to move Healthy Products slightly to the left */
+    margin-right: 110px; /* Adjust the value as needed */
 }
 
-.logoB{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: whitesmoke;
-    cursor: pointer;
-    margin-right: 31%;
-}
-
-.logoA:hover {
-    color: orchid;
-}
-
+.logoA:hover,
 .logoB:hover {
     color: orchid;
 }
 
 .auth {
     display: flex;
-    /* gap: 10px; */
 }
 
 .login,
@@ -73,4 +65,86 @@
 .myorder:hover {
     background-color: #f0f0f0;
     color: orchid;
+}
+
+.accountIcon {
+    background: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Account Menu */
+.accountMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    padding: 10px 0;
+}
+
+.accountMenu a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accountMenu a:hover {
+    background-color: #f0f0f0;
+    color: orchid;
+}
+
+/* Responsive Styles */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .logoA,
+    .logoB {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .auth {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login,
+    .logout,
+    .signup,
+    .myorder {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
 }
