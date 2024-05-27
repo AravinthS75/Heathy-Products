@@ -59,4 +59,4 @@ function HomePage() {
     </>
 }
 
-export default memo(HomeEnable);
+export default memo(HomeEnable)
