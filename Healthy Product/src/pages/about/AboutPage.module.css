@@ -1,56 +1,113 @@
-x   * {
+/* Base Styles */
+* {
     margin: 0;
-    /* padding: 0; */
     box-sizing: border-box;
-    max-height:fit-content;
-    /* max-width: max-content; */
-    max-width:fit-content ;
-}
-.content {
+  }
+  
+  .content {
     padding: 2% 20% 0% 20%;
     padding-left: 50%;
     width: 100%;
     margin: 0;
     background-color: aliceblue;
     line-height: 220%;
-}
-
-.img{
+  }
+  
+  .img {
     border: 1px solid beige;
     float: left;
     margin: 0;
     margin-top: 6%;
     margin-left: 5%;
     border-radius: 20%;
-}
-
-.txt{
+  }
+  
+  .txt {
     font-size: larger;
     padding-top: 1%;
     width: max-content;
     height: max-content;
-}
-
-ul, ol {
+  }
+  
+  ul,
+  ol {
     list-style: none;
   }
-
-.conect{
-    width:35px;
+  
+  .conect {
+    width: 35px;
     height: 35px;
     border-radius: 100%;
-}
-.conect:hover{
-    padding: 2px;   
+  }
+  
+  .conect:hover {
+    padding: 2px;
     cursor: pointer;
-}
-
-.h2{
-    position:relative;
+  }
+  
+  .h2 {
+    position: relative;
     background-color: aliceblue;
     padding-left: 13%;
     padding-bottom: 3%;
-}
-.logo{
+  }
+  
+  .logo {
     padding-left: 9%;
-}
+  }
+  
+  
+  /* Mobile Browser Responsive Styles */
+  @media (max-width: 480px) {
+    .content {
+      padding-left: 5%;
+      font-size: 60%;
+    }
+  
+    .conect {
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+    }
+  
+    .conect:hover {
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    .nameMobile {
+      display: block;
+    }
+    .imageContainer {
+        text-align: center;
+        background-color: aliceblue;
+      }
+      
+      .img {
+        width: 337px; 
+        height: 300px;
+        border: 1px solid beige;
+        border-radius: 20%;
+      }
+      
+      
+      .nameMobile {
+        text-align: center;
+        padding-top: 90%;
+        font-size: 20px;
+      }
+    
+  
+    /* Hide the second instance of the name on mobile */
+    .h2 {
+      display: none;
+    }
+  }
+  
+  /* PC Browser Styles */
+  @media (min-width: 481px) {
+    .nameMobile {
+      display: none;
+    }
+  }
+  
