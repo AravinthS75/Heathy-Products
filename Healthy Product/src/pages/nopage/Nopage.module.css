@@ -12,3 +12,11 @@
     line-height: 225%;
     background-color: aliceblue;
 }
+@media (max-width: 768px) {
+    .contentText{
+        padding-top: 70%;
+        padding-bottom: 70%;
+        padding-left: 35%;
+        font-size: small;
+    }
+}
